@@ -11,14 +11,21 @@ namespace snake
         static void Main(string[] args)
         {
 
-            HorisontalLine line = new HorisontalLine(0, 20, 0,'*');
-            line.Draw();
+            Console.SetWindowSize(1, 1);
+            Console.SetBufferSize(80, 25);
+            Console.SetWindowSize(80, 25);
 
-            VerticalLine lines = new VerticalLine(0, 0, 20, '*');
-            lines.Druw();
+            HorisontalLine upline = new HorisontalLine(0, 78, 0,'+');  
+            VerticalLine rigthline = new VerticalLine(0, 0, 24, '+'); 
+            HorisontalLine downline = new HorisontalLine(0, 78, 24, '+');
+            VerticalLine leftline = new VerticalLine(78, 0, 24, '+');
+            upline.Draw();
+            rigthline.Draw();
+            downline.Draw();
+            leftline.Draw();
 
-            HorisontalLine linez = new HorisontalLine(0, 20, 20, '*');
-            linez.Draw();
+            Point p = new Point(3, 4, '*');
+            p.Drow();
             Console.ReadLine();
         }
 
