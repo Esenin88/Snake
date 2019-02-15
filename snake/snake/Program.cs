@@ -53,7 +53,7 @@ namespace snake
             }
 
 
-            Console.ReadLine();
+            
         }
 
     }
